@@ -13,10 +13,66 @@ html {
 body {
   font-family: "Barlow Semi Condensed", serif;
   font-weight: 400;
-  line-height: 1.6;
-  min-height: 100vh; }
+  line-height: 1.4;
+  min-height: 100vh;
+  font-size: 1.3rem;
+  background-color: #e7eaee; }
 
-img,
-picture {
+h2 {
+  font-weight: 600;
+  line-height: 1.2; }
+
+img {
   max-width: 100%;
-  display: block; }
+  display: block;
+  width: 3.5rem;
+  border-radius: 50%; }
+
+.container {
+  max-width: 80%;
+  margin: 5rem auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem; }
+
+.box {
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 3rem;
+  box-shadow: 0 2rem 4rem rgba(103, 109, 126, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; }
+  .box--1 {
+    background-color: #7541c8;
+    color: white; }
+  .box--2 {
+    background-color: #48556a;
+    color: white; }
+  .box--3 {
+    color: #19212e; }
+    .box--3 .verified {
+      color: #676d7e; }
+  .box--4 {
+    background-color: #19212e;
+    color: white; }
+  .box--5 {
+    color: #19212e; }
+    .box--5 .verified {
+      color: #676d7e; }
+
+.img__box {
+  display: flex;
+  gap: 2rem;
+  align-items: center; }
+  .img__box__text {
+    display: flex;
+    flex-direction: column; }
+
+.name {
+  font-size: 1.4rem;
+  font-weight: 600; }
+
+.verified {
+  font-size: 1rem;
+  font-weight: 500; }
